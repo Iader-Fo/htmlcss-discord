@@ -4,7 +4,9 @@
     box-sizing: border-box;
 }
 
-.debug {}
+body{
+    font-family: 'Whitney', sans-serif;
+}
 
 .container_center {
     margin: 0 auto;
@@ -12,7 +14,7 @@
 }
 
 header {
-    background-color: aqua;
+    background-color: #255EE9;
     padding: 15px;
 }
 
@@ -26,7 +28,7 @@ header {
     align-items: center;
     min-height: 50px;
     /* background-color: orange; */
-    border: 3px dashed black;
+    /* border: 3px dashed black; */
     padding: 10px;
 }
 
@@ -36,7 +38,7 @@ header {
 
 .logo {   
     width: 25%;
-    border: 2px dashed black;
+    /* border: 2px dashed black; */
 }
 
 #img_logo{
@@ -47,8 +49,8 @@ header {
 .link {
     display: flex;
     width: 50%;
-    border: 2px dashed black;
-    justify-content:space-between;
+    /* border: 2px dashed black; */
+    justify-content:space-around;
 
 }
 
@@ -61,10 +63,20 @@ ul {
 
 a {
     text-decoration: none;
+    color: white;
 }
 
-.accedi{
+.accedi, #scarica{
+    color: black;
     background-color: white;
+    border-radius: 40px;
+    font-size: 14px;
+    padding: 6px 16px;
+}
+
+#apri{
+    background-color: rgb(0, 0, 0);
+    color: white;
     border-radius: 40px;
     font-size: 14px;
     padding: 6px 16px;
@@ -74,20 +86,48 @@ a {
     display: flex;
     justify-content: flex-end;
     width: 25%;
-    border: 2px dashed black;
+    /* border: 2px dashed black; */
 }
 
 .header_main {
-    background-image: url("img/jumbo.png");
-    /* background-image: url(); */
-    display: flex;
-    padding: 40px 0;
+    /* background-color: blue; */
+    background-image: url('../img/jumbo.png');
+    background-size: contain;
+    margin: auto;
+    padding: 23px 0;
+    max-width: 1200px;
 }
 
+/* .jumbo{
+    margin: auto;
+} */
+
 .container_header_main {
-    
-    width: 1000px;
+    background-color: transparent;
+    width: 600px;
     min-height: 400px;
+}
+
+.title{
+    text-align: center;
+    padding: 20px;
+}
+h1, .subtitle{
+    color: white;
+}
+h1{
+    padding: 30px;
+    font-size: 40px;
+}
+
+.subtitle{
+    padding: 0 0 20px 0;
+    line-height: 25px;
+}
+
+.button_flex{
+    display: flex;
+    justify-content: center;
 }
 
 .blue {
@@ -98,6 +138,7 @@ a {
 
 .pink {
     background-color: rgb(202, 143, 210);
+    background-size: cover;
     width: 40%;
     height: 500px;
 }
