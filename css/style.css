@@ -131,16 +131,42 @@ h1{
 }
 
 .blue {
-    background-color: rgb(70, 127, 202);
+    background-image: url('../img/item1.svg');
+    background-size: contain;
+    width: 60%;
+    height: 500px;
+}
+
+.blue_2{
+    background-image: url('../img/item2.svg');
+    background-size: contain;
+    width: 60%;
+    height: 500px;
+}
+
+.blue_3{
+    background-image: url('../img/item3.svg');
+    background-size: contain;
     width: 60%;
     height: 500px;
 }
 
 .pink {
-    background-color: rgb(202, 143, 210);
+    background-color:transparent;
     background-size: cover;
     width: 40%;
     height: 500px;
+    
+}
+
+.pink > h2{
+    font-size: 35px;
+    padding: 47px 124px 5px 124px;
+}
+
+.pink > p{
+    padding: 10px 124px;
+    line-height: 25px;
 }
 
 .section {
