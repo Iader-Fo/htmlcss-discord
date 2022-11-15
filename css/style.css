@@ -127,8 +127,15 @@ h1{
 }
 
 .button_flex{
-    display: flex;
-    justify-content: center;
+    text-align: center;
+}
+
+#scarica{
+    margin-right: 5px;
+}
+
+#apri{
+    margin-left: 5px;
 }
 
 .blue {
@@ -180,7 +187,7 @@ h1{
 }
 
 .last_text > p{
-    padding: 0 270px;
+    padding: 20 270px;
     line-height: 25px;
     text-align: center;
 }
@@ -191,25 +198,31 @@ h1{
 
 .last_item{
     background-image: url('../img/item4-big.svg');
-    min-height: 500px;
+    min-height: 630px;
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
 .stars{
-    min-height: 90px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: url('../img/stars.svg');
+    
+    
+    
     display: flex;
     align-items: center;
     /* justify-content: center; */
     flex-direction: column;
 }
 
+.stars > div{
+    background-image: url('../img/stars.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 65px;
+    width: 100%;
+}
+
 .stars > h2{
-    padding-top: 50px;
     font-size: 30px;
 }
 
@@ -236,8 +249,16 @@ h1{
     background-color: rgba(5, 5, 5, 0.889);
 }
 
+.section_5{
+    padding-bottom: 30px;
+}
+
+.icon{
+    height: 18px;
+}
+
 .section_6 {
-    padding-top: 40px;
+    /* padding-top: 40px; */
 }
 
 .middle {
@@ -252,16 +273,40 @@ h1{
 }
 
 .red {
-    background-color: rgb(210, 70, 14);
+    background-color: transparent;
     width: 35%;
-    height: 500px;
+    padding: 50px 100px 0 0;
+}
+
+.red > div{
+    margin: 15px 0;
+}
+
+.red > h2{
+    font-size: 34px;
+}
+
+i{
+    margin-right: 10px;
 }
 
 .azure {
-    background-color: rgb(83, 162, 180);
+    background-color: transparent;
     width: calc((100% - 35%) / 4);
-    height: 500px;
-    border: 2px dashed white;
+    padding: 50px 0 0 0;
+}
+
+.azure > ul{
+    flex-direction: column;
+}
+
+.azure > ul > li{
+    line-height: 25px;
+    font-size: 15px;
+}
+
+.border_top{
+    border-top: 1px solid blue ;
 }
 
 hr {
@@ -270,7 +315,7 @@ hr {
 
 .final {
     min-height: 70px;
-    background-color: rgb(25, 151, 151);
-    border: 3px dashed black;
+    background-color: transparent;
     justify-content: space-between;
+    padding: 30px 0 100px 0;
 }
